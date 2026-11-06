@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="home">
@@ -14,8 +16,11 @@
             <p class="nome-site">Analisador de Logs - OTG</p>
         </div>
         <div class="perfil">
-            <img src="img/person-circle.svg" alt="Acessar perfil" class="icon-perfil">
+            <img src="img/person-circle.svg" alt="Acessar perfil" class="icon-perfil" id="btn-perfil">
             <p class="nome-perfil">[Nome do Perfil]</p>
+            <div class="menu-perfil" id="menu-perfil">
+                <button id="btn-perfil">Sair da conta</button>
+            </div>
         </div>
     </header>
 
@@ -25,7 +30,12 @@
             <button class="btn-upload" id="btn-upload"><b>Upload de Coletas</b></button>
         </section>
     </main>
-    
-    <footer><p>&copy; 2026 Company Devs. Todos os direitos reservados.</p></footer>
+
+    <footer>
+        <p>&copy; 2026 Company Devs. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="source.js"></script>
 </body>
+
 </html>
