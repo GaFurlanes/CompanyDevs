@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analise de Logs</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="home">
+            <img src="img/hdd-rack.svg" alt="Logo Site" class="icon-server">
+            <p class="nome-site">Analisador de Logs - OTG</p>
+        </div>
+        <div class="perfil">
+            <img src="img/person-circle.svg" alt="Acessar perfil" class="icon-perfil" id="btn-perfil">
+            <p class="nome-perfil">[Nome do Perfil]</p>
+            <div class="menu-perfil" id="menu-perfil">
+                <a href="index.html" class="link-menu">Início</a>
+                <button id="btn-perfil">Sair da conta</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="perfil-dados">
+            <img src="img/person-circle.svg" alt="Foto do perfil" class="perfil-foto">
+            <p class="titulo-site">Meu Perfil</p>
+
+            <form id="form-perfil" novalidate>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+
+                <label for="senha">Nova senha</label>
+                <input type="password" id="senha" placeholder="Deixe vazio para manter a atual">
+
+                <p class="mensagem" id="mensagem"></p>
+
+                <button type="submit" class="btn-form"><b>Salvar alterações</b></button>
+            </form>
+            <a href="index.html" class="link-form">Voltar</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Company Devs. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="usuarios.js"></script>
+    <script src="source.js"></script>
+    <script src="perfil.js"></script>
+</body>
+
+</html>

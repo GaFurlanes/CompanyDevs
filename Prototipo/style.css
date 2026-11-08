@@ -133,3 +133,146 @@ footer {
     width: 30%;
     height: 70%;
 }
+/* ---------- Login, cadastro e perfil ---------- */
+
+.titulo-site {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    background-color: #040B1B;
+    color: #F0F5FF;
+    border: 1px solid #2877FA;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-form {
+    color: #F0F5FF;
+    background-color: #2877FA;
+    border: #2877FA;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.35s;
+}
+
+.btn-form:hover {
+    background-color: #2878fab6;
+}
+
+.btn-cancelar {
+    background-color: transparent;
+    border: 1px solid #2877FA;
+}
+
+.link-form {
+    color: #2877FA;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.mensagem {
+    color: #ff6b6b;
+    font-size: 14px;
+    min-height: 20px;
+    margin-bottom: 10px;
+}
+
+.link-menu {
+    display: block;
+    color: #F0F5FF;
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.menu-perfil button {
+    display: block;
+}
+
+.perfil-dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px dashed #2877FA;
+    border-radius: 18px;
+    background-color: #081325;
+    color: #F0F5FF;
+    width: 30%;
+    padding: 30px;
+}
+
+.perfil-foto {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* ---------- Pop up de upload ---------- */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 11, 27, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-conteudo {
+    background-color: #081325;
+    color: #F0F5FF;
+    border: 1px solid #2877FA;
+    border-radius: 18px;
+    width: 30%;
+    padding: 30px;
+}
+
+.popup-botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.popup-botoes button {
+    flex: 1;
+}
+
+.apresentacao-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.apresentacao-site img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.apresentacao-site .titulo-site {
+    margin-bottom: 0;
+}

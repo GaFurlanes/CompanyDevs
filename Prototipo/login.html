@@ -14,12 +14,26 @@
                 <img src="img/hdd-rack-login.svg" alt="Logo Site">
                 <p class="titulo-site">Analisador de Logs - OTG</p>
             </section>
-            <section class="">
+            <section class="form-box">
+                <form id="form-login" novalidate>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
 
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha">
+
+                    <p class="mensagem" id="mensagem"></p>
+
+                    <button type="submit" class="btn-form"><b>Entrar</b></button>
+                </form>
+                <a href="cadastro.html" class="link-form">Não tem conta? Cadastre-se</a>
             </section>
         </section>
     </main>
     
     <footer><p>&copy; 2026 Company Devs. Todos os direitos reservados.</p></footer>
+
+    <script src="usuarios.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@
             <img src="img/person-circle.svg" alt="Acessar perfil" class="icon-perfil" id="btn-perfil">
             <p class="nome-perfil">[Nome do Perfil]</p>
             <div class="menu-perfil" id="menu-perfil">
+                <a href="perfil.html" class="link-menu">Meu perfil</a>
                 <button id="btn-perfil">Sair da conta</button>
             </div>
         </div>
@@ -35,6 +36,49 @@
         <p>&copy; 2026 Company Devs. Todos os direitos reservados.</p>
     </footer>
 
+    <section class="popup" id="popup-upload">
+        <div class="popup-conteudo">
+            <p class="titulo-site">Upload de Coletas</p>
+
+            <form id="form-upload">
+                <label for="fabricante">Fabricante</label>
+                <select id="fabricante">
+                    <option value="">Selecione o fabricante</option>
+                    <option value="Dell">Dell</option>
+                    <option value="HP">HP</option>
+                    <option value="Lenovo">Lenovo</option>
+                </select>
+
+                <label for="tipo">Tipo</label>
+                <select id="tipo">
+                    <option value="">Selecione o tipo</option>
+                    <option value="Servidor">Servidor</option>
+                    <option value="Storage">Storage</option>
+                    <option value="Switch">Switch</option>
+                </select>
+
+                <label for="modelo">Modelo</label>
+                <select id="modelo">
+                    <option value="">Selecione o modelo</option>
+                    <option value="Modelo A">Modelo A</option>
+                    <option value="Modelo B">Modelo B</option>
+                    <option value="Modelo C">Modelo C</option>
+                </select>
+
+                <label for="arquivo">Arquivo da coleta</label>
+                <input type="file" id="arquivo">
+
+                <p class="mensagem" id="mensagem-upload"></p>
+
+                <div class="popup-botoes">
+                    <button type="button" class="btn-form btn-cancelar" id="btn-cancelar"><b>Cancelar</b></button>
+                    <button type="submit" class="btn-form"><b>Enviar coleta</b></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="usuarios.js"></script>
     <script src="source.js"></script>
 </body>
 
