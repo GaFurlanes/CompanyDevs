@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,78 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header>
+        <div class="home">
+            <img src="img/hdd-rack.svg" alt="Logo Site" class="icon-server">
+            <p class="nome-site">Analisador de Logs - OTG</p>
+        </div>
+        <div class="perfil">
+            <img src="img/person-circle.svg" alt="Acessar perfil" class="icon-perfil" id="btn-perfil">
+            <p class="nome-perfil">[Nome do Perfil]</p>
+            <div class="menu-perfil" id="menu-perfil">
+                <a href="perfil.html" class="link-menu">Meu perfil</a>
+                <button id="btn-perfil">Sair da conta</button>
+            </div>
+        </div>
+    </header>
+
     <main>
-        <section class="page-login">
-            <section class="apresentacao-site">
-                <img src="img/hdd-rack-login.svg" alt="Logo Site">
-                <p class="titulo-site">Analisador de Logs - OTG</p>
-            </section>
-            <section class="form-box">
-                <form id="form-login" novalidate>
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="seu@email.com">
-
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Digite sua senha">
-
-                    <p class="mensagem" id="mensagem"></p>
-
-                    <button type="submit" class="btn-form"><b>Entrar</b></button>
-                </form>
-                <a href="cadastro.html" class="link-form">Não tem conta? Cadastre-se</a>
-            </section>
+        <section class="upload-coletas">
+            <img src="img/cloud-upload.svg" alt="Logo Upload de Coletas" class="upload-logo">
+            <button class="btn-upload" id="btn-upload"><b>Upload de Coletas</b></button>
         </section>
     </main>
-    
-    <footer><p>&copy; 2026 Company Devs. Todos os direitos reservados.</p></footer>
+
+    <footer>
+        <p>&copy; 2026 Company Devs. Todos os direitos reservados.</p>
+    </footer>
+
+    <section class="popup" id="popup-upload">
+        <div class="popup-conteudo">
+            <p class="titulo-site">Upload de Coletas</p>
+
+            <form id="form-upload">
+                <label for="fabricante">Fabricante</label>
+                <select id="fabricante">
+                    <option value="">Selecione o fabricante</option>
+                    <option value="Dell">Dell</option>
+                    <option value="HP">HP</option>
+                    <option value="Lenovo">Lenovo</option>
+                </select>
+
+                <label for="tipo">Tipo</label>
+                <select id="tipo">
+                    <option value="">Selecione o tipo</option>
+                    <option value="Servidor">Servidor</option>
+                    <option value="Storage">Storage</option>
+                    <option value="Switch">Switch</option>
+                </select>
+
+                <label for="modelo">Modelo</label>
+                <select id="modelo">
+                    <option value="">Selecione o modelo</option>
+                    <option value="Modelo A">Modelo A</option>
+                    <option value="Modelo B">Modelo B</option>
+                    <option value="Modelo C">Modelo C</option>
+                </select>
+
+                <label for="arquivo">Arquivo da coleta</label>
+                <input type="file" id="arquivo">
+
+                <p class="mensagem" id="mensagem-upload"></p>
+
+                <div class="popup-botoes">
+                    <button type="button" class="btn-form btn-cancelar" id="btn-cancelar"><b>Cancelar</b></button>
+                    <button type="submit" class="btn-form"><b>Enviar coleta</b></button>
+                </div>
+            </form>
+        </div>
+    </section>
 
     <script src="usuarios.js"></script>
-    <script src="login.js"></script>
+    <script src="source.js"></script>
 </body>
+
 </html>
