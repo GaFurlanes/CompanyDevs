@@ -106,7 +106,8 @@ main {
 .btn-upload:hover {
     width: 38%;
     height: 16%;
-    margin: 32px background-color: #2878fab6;
+    margin: 32px;
+    background-color: #2878fab6;
 }
 
 .upload-logo {
@@ -133,7 +134,6 @@ footer {
     width: 30%;
     height: 70%;
 }
-/* ---------- Login, cadastro e perfil ---------- */
 
 .titulo-site {
     font-weight: 600;
@@ -227,8 +227,6 @@ select {
     width: 60px;
     margin-bottom: 10px;
 }
-
-/* ---------- Pop up de upload ---------- */
 
 .popup {
     display: none;
