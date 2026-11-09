@@ -34,37 +34,3 @@ if (formLogin != null) {
         });
     });
 }
-
-if (formCadastro != null) {
-    formCadastro.addEventListener("submit", function (evento) {
-        evento.preventDefault();
-
-        var nome = document.getElementById("nome").value;
-        var email = document.getElementById("email").value;
-        var senha = document.getElementById("senha").value;
-
-        if (nome == "" || email == "" || senha == "") {
-            mensagem.innerText = "Preencha todos os campos.";
-            return;
-        }
-
-        carregarUsuarios(function (lista) {
-            var jaExiste = false;
-
-            for (var i = 0; i < lista.length; i++) {
-                if (lista[i].email == email) {
-                    jaExiste = true;
-                }
-            }
-
-            if (jaExiste) {
-                mensagem.innerText = "Esse e-mail já está cadastrado.";
-            } else {
-                lista.push({ nome: nome, email: email, senha: senha });
-                salvarUsuarios(lista);
-                localStorage.setItem("logado", email);
-                window.location.href = "index.html";
-            }
-        });
-    });
-}
