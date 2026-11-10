@@ -1,5 +1,3 @@
-// Usado no login.html e no cadastro.html (precisa do usuarios.js carregado antes)
-
 var formLogin = document.getElementById("form-login");
 var formCadastro = document.getElementById("form-cadastro");
 var mensagem = document.getElementById("mensagem");

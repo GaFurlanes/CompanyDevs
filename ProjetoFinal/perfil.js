@@ -1,5 +1,3 @@
-// Usado no perfil.html (precisa do usuarios.js carregado antes)
-
 var formPerfil = document.getElementById("form-perfil");
 var mensagem = document.getElementById("mensagem");
 
